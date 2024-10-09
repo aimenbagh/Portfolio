@@ -27,7 +27,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     event.preventDefault(); // Empêche le rechargement de la page
 
     // ID du formulaire Google pour chaque champ (trouvez-les dans l'URL de pré-remplissage)
-    var googleFormURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfm4xdAsrzwlcyBbrVGk0XL8K3i3fxgmvbeaw8tw99uUvfAVg/formResponse"; // Remplacez par votre URL de formulaire
+    var googleFormURL = "https://docs.google.com/forms/d/1jtn_iIop5NhWfWi3_nrQdFosdGjWnb13l0b3MQl0dg0/prefill"; // Remplacez par votre URL de formulaire
 
     // Correspondance des noms des champs avec ceux du formulaire Google
     var formData = new FormData();
