@@ -35,15 +35,15 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     formData.append("entry.1710576459", document.getElementById("email").value); // Remplacez avec l'ID réel
     formData.append("entry.1810006384", document.getElementById("subject").value); // Remplacez avec l'ID réel
     formData.append("entry.1297069348", document.getElementById("message").value); // Remplacez avec l'ID réel
+    formData.append("submit", "Submit"); // Remplacez avec l'ID réel
 
+    var q = new URLSearchParams(formData).toString()
     // Envoyer la requête POST à Google Forms
-    fetch(googleFormURL, {
-        method: 'POST',
+    fetch(`${googleFormURL}?${q}`, {
         mode: 'no-cors',
-        body: formData
     })
-    .then(function() {
-        alert("Message sent successfully!");
+    .then(function(response) {
+        console.log(response);
     })
     .catch(function(error) {
         console.error("Error!", error.message);
