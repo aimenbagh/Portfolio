@@ -390,6 +390,9 @@ h6 {
     margin: 0;
 }
 
+.service .service-detail span {
+    color: #4F84C4;
+}
 
 /**************************************/
 /************ Projects CSS ***********/
