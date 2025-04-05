@@ -415,6 +415,7 @@ h6 {
     
 }
 
+.Projects .Projects-item .link-git,
 .Projects .Projects-item .link-preview,
 .Projects .Projects-item .link-details {
     position: absolute;
@@ -430,18 +431,21 @@ h6 {
     opacity: 0;
 }
 
+.Projects .Projects-item .link-git i,
 .Projects .Projects-item .link-preview i,
 .Projects .Projects-item .link-details i {
     font-size: 22px;
     color: #ffffff;
 }
 
+.Projects .Projects-item .link-git:hover,
 .Projects .Projects-item .link-preview:hover,
 .Projects .Projects-item .link-details:hover {
     background: #ffffff;
     border: 1px solid #4F84C4;
 }
 
+.Projects .Projects-item .link-git:hover i,
 .Projects .Projects-item .link-preview:hover i,
 .Projects .Projects-item .link-details:hover i {
     color: #353535;
@@ -457,14 +461,26 @@ h6 {
     top: calc(50% - 18px);
 }
 
+.Projects .Projects-item .link-git {
+    bottom: 0;
+    top: auto; /* Reset the top property */
+    left: calc(50% - 22.5px); /* Center horizontally */
+}
+
 .Projects .Projects-item:hover .link-preview {
     opacity: 1;
-    left: calc(50% - 50px);
+    left: calc(51.5% - 50px);
 }
 
 .Projects .Projects-item:hover .link-details {
     opacity: 1;
-    right: calc(50% - 50px);
+    right: calc(51.5% - 50px);
+}
+
+.Projects .Projects-item:hover .link-git {
+    opacity: 1;
+    bottom: calc(49.5% - 50px);
+    top: auto; /* Reset the top property */
 }
 
 .Projects .Projects-item .Projects-info {
