@@ -1,974 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Portfolio" name="keywords">
-    <meta content="Portfolio" name="description">
-
-    <!-- logo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/logo.png" rel="icon">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Libraries CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Nav Start -->
-    <div id="nav">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#header-slider" class="nav-item nav-link active">Home</a>
-                        <a href="#about-Start" class="nav-item nav-link">About</a>
-                        <a href="#service-Start" class="nav-item nav-link">Service</a>
-                        <a href="#Projects-Start" class="nav-item nav-link">Projects</a>
-                        <a href="#skill-Start" class="nav-item nav-link">Skills</a>
-                        <a href="#contact-Start" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Nav End -->
-
-    <!-- Header Start-->
-    <div class="header">
-        <div id="header-slider" class="carousel slide" data-ride="carousel">
-
-            <div class="carousel-inner">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="carousel-content">
-                            <h2>I'm Baghdadi Nadjib Aimen.</h2>
-                            <p>Front-End / Full-Stack Developer.</br>
-                                Cybersecurity Master's student @ HIS - Higher Institute of Sciences</p>
-                            <a class="btn" href="">Resume</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="carousel-img">
-                            <img src="img/pho.png" alt="Image">
-                        </div>
-                    </div>
-                </div>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="img/LOGO.png" alt="Logo Portfolio" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
-    <!-- Header End-->
+    </header>
 
-    <!-- About Start-->
-    <div class="about" id="about-Start">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">I'm Baghdadi Nadjib Aimen.</h1>
+                <h2 class="hero-subtitle">Front-End / Full-Stack Developer.</h2>
+                <p class="hero-description">Cybersecurity Master's student @ HIS - Higher Institute of Sciences</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/NADJIB.JPG" alt="Nadjib" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <p>
-                    A brief overview of my Education background
-                </p>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="about-img">
-                        <img src="img/2592285.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="about-content">
-                        <h2>A bit about me</h2>
-                        <p>
-
-                            IT developer passionate about new technologies and creating innovative solutions, with
-                            experience in software and web platform development. I am able to innovate and provide
-                            tailor-made software solutions, optimizing efficiency and output.
-                        </p>
-                    </div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionate Developer</h3>
+                    <p>I'm Baghdadi Nadjib Aimen, a computer developer passionate about new technologies and creating innovative solutions, with experience in software and web platform development.</p>
+                    <p>I'm capable of innovating and providing tailor-made software solutions, optimizing efficiency and productivity.</p>
+                    <p>I'm currently a Master's student in Cybersecurity at HIS (Higher Institute of Sciences) specializing in Front-End and Full-Stack development.</p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <div class="about-img">
-                        <img src="img/HIS.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="about-content">
-                        <h2>Education</h2>
-                        <p>
-                        <ul>
-                            <li><b>Licence Informatique – Systèmes d’information</b></li>
-                            <li>HIS | Higher Institute of Sciences</li>
-                            <li>2024</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Service Start -->
-    <div class="service" id="service-Start">
-        <div class="container">
-            <div class="section-header">
-                <h2>Services</h2>
-                <p>
-                    What I Provide
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-desktop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><span>Innovative Ideas</span></h4>
-                            <p>Innovative Ideas
-                                I thrive on transforming concepts into reality. I leverage creativity and critical
-                                thinking to develop unique solutions that address challenges and enhance user
-                                experiences across web.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-laptop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><span>Software</span></h4>
-                            <p>I creating robust and scalable applications that meet diverse user needs.
-                                With a focus on clean code and efficient design, I utilize modern technologies to
-                                deliver high-quality software solutions that drive success.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-tablet-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><span>Web Maintenance</span></h4>
-                            <p>Ongoing website maintenance and support to ensure your site runs smoothly and securely.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-phone-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><span>Mobile Applications</span></h4>
-                            <p>I development   of mobile application on Android platforms.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Projects Start -->
-    <div class="Projects" id="Projects-Start">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Projects</h2>
-                <p>
-                    What I Built
-                </p>
-            </div>
-
-            <div class="row Projects-container">
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/game-snake/game-snake1.png" class="img-fluid" alt="Projects">
-                        <a href="img/game-snake/game-snake1.png" data-lightbox="Projects" data-title="Game_Snake"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#game_Snake"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-                    <div class="Projects-info">
-                        <h3>Game_Snake</h3>
-                        <p>Software</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/compilateur/compilateur1.png" class="img-fluid" alt="Projects">
-                        <a href="img/compilateur/compilateur1.png" data-lightbox="Projects" data-title="Compiler"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#compilateur"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-                    <div class="Projects-info">
-                        <h3>Compiler</h3>
-                        <p>Software</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/plane/plane1.png" class="img-fluid" alt="Projects">
-                        <a href="img/plane/plane1.png" data-lightbox="Projects" data-title="Flight Infotainment Clone"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#plane"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-                    <div class="Projects-info">
-                        <h3>Flight Infotainment Clone</h3>
-                        <p>Software</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/gestion-stock/stock1.png" class="img-fluid" alt="Projects">
-                        <a href="img/gestion-stock/stock1.png" data-lightbox="Projects" data-title="Stock Management"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#stock"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-
-                    <div class="Projects-info">
-                        <h3>Stock Management</h3>
-                        <p>Software</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/Portfolio/Portfolio1.png" class="img-fluid" alt="Projects">
-                        <a href="img/Portfolio/Portfolio1.png" data-lightbox="Projects" data-title="Portfolio"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#Portfolio12"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-                    <div class="Projects-info">
-                        <h3>Portfolio</h3>
-                        <p>Web</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 Projects-item">
-                    <div class="Projects-img">
-                        <img src="img/ntaalem/Home.png" class="img-fluid" alt="Projects">
-                        <a href="img/ntaalem/Home.png" data-lightbox="Projects" data-title="Ntaalem"
-                            class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details" data-toggle="modal"
-                            data-target="#ntaalem"><i class="ion-md-open"></i></a>
-                        <a href="https://github.com/aimenbagh" class="link-git" title="GitHub Repository"><i class="ion ion-logo-github"></i></a>
-                    </div>
-                    <div class="Projects-info">
-                        <h3>Ntaalem</h3>
-                        <p>Web</p>
-                    </div>
+                <div class="about-image">
+                    <img src="img/pho.png" alt="Baghdadi Nadjib Aimen" class="about-img">
+                    
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Projects End -->
+    </section>
 
-    <!-- Skills Start-->
-    <div class="skills" id="skill-Start">
+    <!-- Formation/Certification Section -->
+
+    <section id="formation-certification" class="formation-certification">
         <div class="container">
-            <div class="section-header">
-                <h2>My Skills</h2>
-                <p>
-                    Possessing a wide range of skills and expertise.
-                </p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="skill-item">
-                        <h3>Front-End Skills</h3>
-                        <div class="skill-name">
-                            <p>HTML</p>
-                            <p>90%</p>
+            <h2 class="section-title">Formation & Certifications</h2>
+            <div class="education-certification">
+                <h3>Formation</h3>
+                <div class="education-item">
+                    <h4 class="education-title">Licence Informatique – Systèmes d'information</h4>
+                    <p class="education-institution">HIS | Higher Institute of Sciences</p>
+                            <p class="education-date">2024</p>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>CSS</p>
-                            <p>85%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>javascript</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>vue js</p>
-                            <p>50%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>tailwind css</p>
-                            <p>50%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                        
+                        <h3>Certifications</h3>
+                        <div class="certification-item">
+                            <h4 class="certification-title">CCNA: Introduction to Networks</h4>
+                            <p class="certification-institution">Cisco Networking Academy</p>
+                            <p class="certification-date">2025</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-item">
-                        <h3>Back-End Skills</h3>
-                        <div class="skill-name">
-                            <p>PHP</p>
-                            <p>90%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>Laravel</p>
-                            <p>85%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>MySQL</p>
-                            <p>95%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-item">
-                        <h3>Program Skills</h3>
-                        <div class="skill-name">
-                            <p>Java</p>
-                            <p>70%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>C</p>
-                            <p>85%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>C#</p>
-                            <p>65%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>Figma</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>XML</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>UML</p>
-                            <p>90%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>python</p>
-                            <p>35%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- Skills End-->
+    </section>
 
-    <!-- Contact Start -->
-    <div class="contact" id="contact-Start">
+    <!-- skills Section -->
+
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <h2>Contact Me</h2>
-                <p>
-                    If you want to know more about me or my work, or if you would just like to say hello, send me a
-                    message.
-                </p>
-            </div>
-            <div class="col-md-8 mx-auto">
-                <div class="form">
-                    <form class="contactForm" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group col-sm-8 mx-auto">
-                                <input type="text" id="name" class="form-control" placeholder="Your Name" required />
-                            </div>
-                            <div class="form-group col-sm-8 mx-auto">
-                                <input type="email" id="email" class="form-control" placeholder="Your Email" required />
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        En Cours
+                            </h4>
+                            <div class="skills-list">
+                                <span class="skill">Master Cybersécurité</span>
+                                <span class="skill">Développement Full-Stack</span>
+                                <span class="skill">Cloud Computing</span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" class="form-control" placeholder="Subject" required />
+                        <!-- Front-End Skills -->
+                        <div class="skill-category">
+                            <h4 class="category-title">
+                                <i class="fas fa-paint-brush"></i>
+                                Front-End
+                            </h4>
+                            <div class="skills-list">
+                                <span class="skill">HTML5</span>
+                                <span class="skill">CSS</span>
+                                <span class="skill">JavaScript</span>
+                                <span class="skill">Vue.js</span>
+                                <span class="skill">Bootstrap</span>
+                                <span class="skill">tailwind css</span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" class="form-control" rows="5" placeholder="Message"
-                                required></textarea>
+                        
+                        <!-- Back-End Skills -->
+                        <div class="skill-category">
+                            <h4 class="category-title">
+                                <i class="fas fa-server"></i>
+                                Back-End
+                            </h4>
+                            <div class="skills-list">
+                                <span class="skill">PHP</span>
+                                <span class="skill">Laravel</span>
+                                <span class="skill">MySQL</span>
+                                <span class="skill">MongoDB</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Program Skills -->
+                        <div class="skill-category">
+                            <h4 class="category-title">
+                                <i class="fas fa-code"></i>
+                                Programmation
+                            </h4>
+                            <div class="skills-list">
+                                <span class="skill">Java</span>
+                                <span class="skill">C++ / C / C#</span>
+                                <span class="skill">Python</span>
+                                <span class="skill">JavaScript</span>
+                                <span class="skill">UML</span>
+                                <span class="skill">Git</span>
+                                <span class="skill">Docker</span>
+                                <span class="skill">XML</span>
+                                <span class="skill">Figma</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Network Skills -->
+                        <div class="skill-category">
+                            <h4 class="category-title">
+                                <i class="fas fa-network-wired"></i>
+                                Réseaux
+                            </h4>
+                            <div class="skills-list">
+                                <span class="skill">TCP/IP</span>
+                                <span class="skill">DNS</span>
+                                <span class="skill">HTTP/HTTPS</span>
+                                <span class="skill">LAN/WAN</span>
+                                <span class="skill">Sécurité Réseau</span>
+                                <span class="skill">Cisco</span>
+                                <span class="skill">VPN</span>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="img/compilateur/compilateur1.png" alt="compilateur" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">compilateur</h3>
+                        <p class="project-description">aaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaa</span>
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaaa</span>
+                        </div>
+                        <a href="pagespage.html" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="img/game-snake/game-snake1.png" alt="Game_Snake" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Game_Snake</h3>
+                        <p class="project-description">aaaaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaaa</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="img/plane/plane1.png" alt="Flight Infotainment Clone" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Flight Infotainment Clone</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaaaa</span>
+                            <span class="tech">aaaaa</span>
+                            <span class="tech">aaaaa</span>
+                            <span class="tech">aaaaa</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="img/gestion-stock/stock1.png" alt="Stock Management" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Gestion de Stock</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaaaa</span>
+                            <span class="tech">aaaaa</span>
+                            <span class="tech">aaaaaa</span>
+                            <span class="tech">aaaaa</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="img/Portfolio/Portfolio1.png" alt="Portfolio" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaa</span>
+                            <span class="tech">aaaaaa</span>
+                            <span class="tech">aaaaaa</span>
+                            <span class="tech">aaaaaaa</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="img/ntaalem/Home.png" alt="ntaalem" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">ntaalem</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaa</span>
+                            <span class="tech">aaaa</span>
+                            <span class="tech">aaaa</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Plateforme de aaaaaa</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">WordPress</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">API Google Maps</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Plateforme de aaaaaa</h3>
+                        <p class="project-description">aaaaaaaa</p>
+                        <div class="project-tech">
+                            <span class="tech">WordPress</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">API Google Maps</span>
+                        </div>
+                        <a href="pages" class="btn">Voir le Projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <button class="btn" type="submit">Send Message</button>
+                            <h3>Email</h3>
+                            <p>nadjibaimenbaghdadi@gmail.com</p>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Contact End -->
-
-    <!-- Footer Start -->
-    <div class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>About</h4>
-                        <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#header-slider">Home</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#about-Start">About</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#service-Start">services</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#Projects-Start">Projects</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#skill-Start">Skills</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact-Start">Contact</a></li>
-                        </ul>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Me</h4>
-                        <p>
-                            Alger, Algérie<br>
-                            <strong>Email: </strong>nadjibaimenbaghdadi@gmail.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/baghdadi-nadjib-aimen/"><i
-                                    class="ion-logo-linkedin"></i></a>
-                            <a href="https://github.com/aimenbagh"><i class="ion-logo-github"></i></a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="credit">Created by <span>Baghdadi Aimen Nadjib</span> | all rights reserved</div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Modals -->
-    <div>
-
-        <!-- Modal1 -->
-
-        <div class="modal fade" id="game_Snake" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Game-Snake</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="gamemmm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#gamemmm" data-slide-to="0" class="active"></li>
-                                <li data-target="#gamemmm" data-slide-to="1"></li>
-                                <li data-target="#gamemmm" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/img/game-snake/game-snake1.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/game-snake/game-snake2.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/game-snake/game-snake3.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#gamemmm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#gamemmm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>1111111111</p>
                         </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <p>
-                        <ul>
-                            <li> C (programming language)</li>
-                        </ul>
-                        </p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p>Alger, Algérie</p>
+                        </div>
                     </div>
                 </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Votre email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Sujet du message" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" placeholder="Votre message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Envoyer le Message</button>
+                </form>
             </div>
         </div>
+    </section>
 
-        <!-- Modal2 -->
-
-        <div class="modal fade" id="compilateur" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Compiler</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="compilateurmmm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#compilateurmmm" data-slide-to="0" class="active"></li>
-                                <li data-target="#compilateurmmm" data-slide-to="1"></li>
-                                <li data-target="#compilateurmmm" data-slide-to="2"></li>
-                                <li data-target="#compilateurmmm" data-slide-to="3"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/compilateur/compilateur1.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/compilateur/compilateur2.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/compilateur/compilateur3.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/compilateur/compilateur4.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#compilateurmmm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#compilateurmmm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <p>
-                        <ul>
-                            <li>java</li>
-                            <li>java swing</li>
-                            <li>regex</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/baghdadi-nadjib-aimen/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/aimenbagh" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
             </div>
+            <p class="copyright">&copy; Created by Baghdadi Nadjib Aimen | all rights reserved</p>
         </div>
+    </footer>
 
-        <!-- Modal3 -->
-
-        <div class="modal fade" id="plane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Flight Infotainment Clone</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="planemmm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#planemmm" data-slide-to="0" class="active"></li>
-                                <li data-target="#planemmm" data-slide-to="1"></li>
-                                <li data-target="#planemmm" data-slide-to="2"></li>
-                                <li data-target="#planemmm" data-slide-to="3"></li>
-                                <li data-target="#planemmm" data-slide-to="4"></li>
-                                <li data-target="#planemmm" data-slide-to="5"></li>
-                                <li data-target="#planemmm" data-slide-to="6"></li>
-                                <li data-target="#planemmm" data-slide-to="7"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/plane/plane1.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane2.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane3.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane4.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane5.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane6.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane7.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/plane/plane8.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#planemmm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#planemmm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <p>
-                        <ul>
-                            <li>java</li>
-                            <li>java swing</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal4 -->
-
-        <div class="modal fade" id="stock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Stock Management</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="stockmmm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#stockmmm" data-slide-to="0" class="active"></li>
-                                <li data-target="#stockmmm" data-slide-to="1"></li>
-                                <li data-target="#stockmmm" data-slide-to="2"></li>
-                                <li data-target="#stockmmm" data-slide-to="3"></li>
-                                <li data-target="#stockmmm" data-slide-to="4"></li>
-                                <li data-target="#stockmmm" data-slide-to="5"></li>
-                                <li data-target="#stockmmm" data-slide-to="6"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/gestion-stock/stock1.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock2.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock3.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock4.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock5.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock6.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/gestion-stock/stock7.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#stockmmm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#stockmmm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <p>
-                        <ul>
-                            <li>java</li>
-                            <li>java swing</li>
-                            <li>SceneBuilder</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal5 -->
-
-        <div class="modal fade" id="Portfolio12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Portfolio</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="Portfoliommm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#Portfoliommm" data-slide-to="0" class="active"></li>
-                                <li data-target="#Portfoliommm" data-slide-to="1"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/img/Portfolio/Portfolio1.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/img/Portfolio/Portfolio2.png" class="d-block w-100" alt="...">
-                                </div>
-
-                            </div>
-                            <a class="carousel-control-prev" href="#Portfoliommm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#Portfoliommm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>javascript</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal5 -->
-
-        <div class="modal fade" id="ntaalem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ntaalem</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--slide  -->
-                        <div id="ntaalemmmm" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#ntaalemmmm" data-slide-to="0" class="active"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="1"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="2"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="3"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="4"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="5"></li>
-                                <li data-target="#ntaalemmmm" data-slide-to="6"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/ntaalem/Home.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/admin dashboard.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/browse.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/fin quiz.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/modifier formation.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/photo_2024-07-11_12-06-57.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img//ntaalem/profil edit.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#ntaalemmmm" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#ntaalemmmm" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--slide  -->
-                        <hr>
-                        <h5>Description</h5>
-                        <p>..................</p>
-                        <hr>
-                        <h5>Technologies Used</h5>
-                        <ul>
-                            <li>laravel</li>
-                            <li>vue js</li>
-                            <li>tailwind css</li>
-                            <li>LiveKit (WebRTC).</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-
-    <!-- Libraries JS -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Main Javascript -->
     <script src="js/main.js"></script>
-
 </body>
-
 </html>

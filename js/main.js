@@ -1,53 +1,113 @@
-(function ($) {
-    "use strict";
+// ===== GESTION DU THÈME =====
+class ThemeManager {
+    constructor() {
+        this.themeToggleBtn = document.getElementById('theme-toggle');
+        this.themeIcon = this.themeToggleBtn.querySelector('i');
+        this.prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        this.init();
+    }
+    
+    init() {
+        // Vérifier le thème système ou le localStorage
+        const currentTheme = localStorage.getItem('theme') || 
+                            (this.prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        // Appliquer le thème au chargement
+        if (currentTheme === 'dark') {
+            this.enableDarkMode();
+        }
+        
+        // Écouter le clic sur le bouton de bascule
+        this.themeToggleBtn.addEventListener('click', () => this.toggleTheme());
+    }
+    
+    toggleTheme() {
+        const theme = document.documentElement.getAttribute('data-theme');
+        
+        if (theme === 'dark') {
+            this.disableDarkMode();
+        } else {
+            this.enableDarkMode();
+        }
+    }
+    
+    enableDarkMode() {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        this.themeIcon.classList.remove('fa-moon');
+        this.themeIcon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+    }
+    
+    disableDarkMode() {
+        document.documentElement.removeAttribute('data-theme');
+        this.themeIcon.classList.remove('fa-sun');
+        this.themeIcon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+    }
+}
 
-    // Skills section
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+// ===== GESTION DE LA NAVIGATION MOBILE =====
+class NavigationManager {
+    constructor() {
+        this.hamburger = document.getElementById('hamburger');
+        this.navMenu = document.getElementById('nav-menu');
+        this.navLinks = document.querySelectorAll('.nav-link');
+        this.init();
+    }
+    
+    init() {
+        this.hamburger.addEventListener('click', () => this.toggleMenu());
+        
+        this.navLinks.forEach(link => {
+            link.addEventListener('click', () => this.closeMenu());
         });
-    }, {offset: '80%'});
+    }
     
-
-    // jQuery counterUp
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    toggleMenu() {
+        this.navMenu.classList.toggle('active');
+    }
     
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-      });
-      
-      
+    closeMenu() {
+        this.navMenu.classList.remove('active');
+    }
+}
+
+// ===== GESTION DU FORMULAIRE DE CONTACT =====
+class FormManager {
+    constructor() {
+        this.contactForm = document.getElementById('contact-form');
+        this.init();
+    }
     
-})(jQuery);
+    init() {
+        this.contactForm.addEventListener('submit', (e) => this.handleSubmit(e));
+    }
+    
+    handleSubmit(e) {
+        e.preventDefault();
+        
+        // Récupérer les valeurs du formulaire
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Ici, vous pourriez envoyer les données à un serveur
+        console.log('Données du formulaire:', formData);
+        
+        // Afficher un message de confirmation
+        alert('Merci pour votre message! Je vous répondrai dès que possible.');
+        
+        // Réinitialiser le formulaire
+        this.contactForm.reset();
+    }
+}
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Empêche le rechargement de la page
-
-    // ID du formulaire Google pour chaque champ (trouvez-les dans l'URL de pré-remplissage)
-    var googleFormURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfm4xdAsrzwlcyBbrVGk0XL8K3i3fxgmvbeaw8tw99uUvfAVg/formResponse"; // Remplacez par votre URL de formulaire
-
-    // Correspondance des noms des champs avec ceux du formulaire Google
-    var formData = new FormData();
-    formData.append("entry.677524296", document.getElementById("name").value); // Remplacez avec l'ID réel
-    formData.append("entry.1710576459", document.getElementById("email").value); // Remplacez avec l'ID réel
-    formData.append("entry.1810006384", document.getElementById("subject").value); // Remplacez avec l'ID réel
-    formData.append("entry.1297069348", document.getElementById("message").value); // Remplacez avec l'ID réel
-    formData.append("submit", "Submit"); // Remplacez avec l'ID réel
-
-    var q = new URLSearchParams(formData).toString()
-    // Envoyer la requête POST à Google Forms
-    fetch(`${googleFormURL}?${q}`, {
-        mode: 'no-cors',
-    })
-    .then(function(response) {
-        console.log(response);
-    })
-    .catch(function(error) {
-        console.error("Error!", error.message);
-        alert("Failed to send the message. Please try again.");
-    });
+// ===== INITIALISATION DES CLASSES =====
+document.addEventListener('DOMContentLoaded', () => {
+    new ThemeManager();
+    new NavigationManager();
+    new FormManager();
 });
-
