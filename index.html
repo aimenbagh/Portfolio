@@ -12,12 +12,14 @@
     <!-- Header & Navigation -->
     <header>
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="img/LOGO.png" alt="Logo Portfolio" class="logo-img">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Portfolio" class="logo-img">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#formation-certification" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-item">
@@ -60,7 +62,7 @@
                     <p>I'm currently a Master's student in Cybersecurity at HIS (Higher Institute of Sciences) specializing in Front-End and Full-Stack development.</p>
                 </div>
                 <div class="about-image">
-                    <img src="img/pho.png" alt="Baghdadi Nadjib Aimen" class="about-img">
+                    <img src="img/pho.png" alt="Baghdadi Nadjib Aimen" class="about-img clickable-image" data-index="0" data-caption="Baghdadi Nadjib Aimen">
                     
                 </div>
             </div>
@@ -71,16 +73,25 @@
 
     <section id="formation-certification" class="formation-certification">
         <div class="container">
-            <h2 class="section-title">Formation & Certifications</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="education-certification">
-                <h3>Formation</h3>
-                <div class="education-item">
-                    <h4 class="education-title">Licence Informatique – Systèmes d'information</h4>
-                    <p class="education-institution">HIS | Higher Institute of Sciences</p>
-                            <p class="education-date">2024</p>
+                        <h3>Formation</h3>
+                        <div class="education-item">
+                            <h4 class="education-title">Licence Informatique – Systèmes d'information</h4>
+                            <p class="education-institution">HIS | Higher Institute of Sciences</p>
+                            <p class="education-date">2022/2024</p>
                         </div>
-                        
+                        <div class="education-item">
+                            <h4 class="education-title">Cybersecurity Master's student</h4>
+                            <p class="education-institution">HIS | Higher Institute of Sciences</p>
+                            <p class="education-date">2025</p>
+                        </div>
                         <h3>Certifications</h3>
+                        <div class="certification-item">
+                            <h4 class="certification-title">Laravel: Certificate of Completion</h4>
+                            <p class="certification-institution">HIS | Higher Institute of Sciences</p>
+                            <p class="certification-date">2023</p>
+                        </div>
                         <div class="certification-item">
                             <h4 class="certification-title">CCNA: Introduction to Networks</h4>
                             <p class="certification-institution">Cisco Networking Academy</p>
@@ -180,85 +191,82 @@
         <div class="container">
             <h2 class="section-title">Mes Projets</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1 compilateur -->
                 <div class="project-card">
-                    <img src="img/compilateur/compilateur1.png" alt="compilateur" class="project-img">
+                    <img src="img/compilateur/compilateur1.png" alt="compilateur" class="project-img clickable-image" data-index="0" data-caption="compilateur">
                     <div class="project-content">
                         <h3 class="project-title">compilateur</h3>
-                        <p class="project-description">aaaaa</p>
+                        <p class="project-description">This project is a lexical analyzer developed in Java with a Swing graphical interface. It allows analyzing source code and identifying different types of tokens such as keywords, identifiers, constants, and separators.</p>
                         <div class="project-tech">
-                            <span class="tech">aaaa</span>
-                            <span class="tech">aaa</span>
-                            <span class="tech">aaaa</span>
-                            <span class="tech">aaaa</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Swing</span>
+                            <span class="tech">Lexical Analysis</span>
+                            <span class="tech">ANTLR</span>
+                            <span class="tech">regex</span>
+
                         </div>
-                        <a href="pages/page.html" class="btn">Voir le Projet</a>
+                        <a href="pages/compilateur.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
+                <!-- Project 2 Game_Snake -->
                 <div class="project-card">
-                    <img src="img/game-snake/game-snake1.png" alt="Game_Snake" class="project-img">
+                    <img src="img/game-snake/game-snake1.png" alt="Game_Snake" class="project-img clickable-image" data-index="0" data-caption="Game_Snake">
                     <div class="project-content">
                         <h3 class="project-title">Game_Snake</h3>
-                        <p class="project-description">aaaaaaaaaa</p>
+                        <p class="project-description">A classic Snake game implemented in C, featuring a console-based interface with customizable difficulty levels and smooth controls.</p>
                         <div class="project-tech">
-                            <span class="tech">aaaa</span>
-                            <span class="tech">aaaa</span>
-                            <span class="tech">aaaa</span>
+                            <span class="tech">C</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/Game_Snake.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
+                <!-- Project 3 Flight Infotainment Clone-->
                 <div class="project-card">
-                    <img src="img/plane/plane1.png" alt="Flight Infotainment Clone" class="project-img">
+                    <img src="img/plane/plane1.png" alt="Flight Infotainment Clone" class="project-img clickable-image" data-index="0" data-caption="Flight Infotainment Clone">
                     <div class="project-content">
                         <h3 class="project-title">Flight Infotainment Clone</h3>
-                        <p class="project-description">aaaaaaaa</p>
+                        <p class="project-description">Flight Infotainment Clone is a Java application that simulates an in-flight entertainment system for airplane passengers. The interface offers several features such as a home screen, flight map, entertainment (movies, music, games, books, news, web browsing), onboard services, billing, and a child mode.</p>
                         <div class="project-tech">
-                            <span class="tech">aaaaa</span>
-                            <span class="tech">aaaaa</span>
-                            <span class="tech">aaaaa</span>
-                            <span class="tech">aaaaa</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Swing</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/Flight-Infotainment-Clone.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                <!-- Project 4 -->
+                <!-- Project 4 Stock Management -->
                 <div class="project-card">
-                    <img src="img/gestion-stock/stock1.png" alt="Stock Management" class="project-img">
+                    <img src="img/gestion-stock/stock1.png" alt="Stock Management" class="project-img clickable-image" data-index="0" data-caption="Stock Management">
                     <div class="project-content">
-                        <h3 class="project-title">Gestion de Stock</h3>
-                        <p class="project-description">aaaaaaaa</p>
+                        <h3 class="project-title">Stock Management</h3>
+                        <p class="project-description">A cross-platform JavaFX application for managing inventory, sales, purchases, and client/supplier relationships.</p>
                         <div class="project-tech">
-                            <span class="tech">aaaaa</span>
-                            <span class="tech">aaaaa</span>
-                            <span class="tech">aaaaaa</span>
-                            <span class="tech">aaaaa</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Swing</span>
+                            <span class="tech">JavaFX</span>
+                            <span class="tech">FXML</span>
+                            <span class="tech">MVC</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/gestion-stock.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                <!-- Project 5 -->
+                <!-- Project 5 Portfolio -->
                 <div class="project-card">
-                    <img src="img/Portfolio/Portfolio1.png" alt="Portfolio" class="project-img">
+                    <img src="img/Portfolio/Portfolio1.png" alt="Portfolio" class="project-img clickable-image" data-index="0" data-caption="Portfolio">
                     <div class="project-content">
                         <h3 class="project-title">Portfolio</h3>
-                        <p class="project-description">aaaaaaaa</p>
+                        <p class="project-description">Portfolio</p>
                         <div class="project-tech">
-                            <span class="tech">aaa</span>
-                            <span class="tech">aaaaaa</span>
-                            <span class="tech">aaaaaa</span>
-                            <span class="tech">aaaaaaa</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Responsive Design</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/Portfolio.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                <!-- Project 6 -->
+                <!-- Project 6 ntaalem -->
                 <div class="project-card">
-                    <img src="img/ntaalem/Home.png" alt="ntaalem" class="project-img">
+                    <img src="img/ntaalem/Home.png" alt="ntaalem" class="project-img clickable-image" data-index="0" data-caption="ntaalem">
                     <div class="project-content">
                         <h3 class="project-title">ntaalem</h3>
                         <p class="project-description">aaaaaaaa</p>
@@ -271,11 +279,11 @@
                         <a href="pages" class="btn">Voir le Projet</a>
                     </div>
                 </div>
-                <!-- Project 7 -->
+                <!-- Project 7 listen -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img clickable-image" data-index="0" data-caption="listen">
                     <div class="project-content">
-                        <h3 class="project-title">Plateforme de aaaaaa</h3>
+                        <h3 class="project-title">listen</h3>
                         <p class="project-description">aaaaaaaa</p>
                         <div class="project-tech">
                             <span class="tech">WordPress</span>
@@ -283,12 +291,12 @@
                             <span class="tech">JavaScript</span>
                             <span class="tech">API Google Maps</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/listen.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
                 <!-- Project 8 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Blog+De+Voyage" alt="aaaaa" class="project-img clickable-image" data-index="0" data-caption="Plateforme de aaaaaa">
                     <div class="project-content">
                         <h3 class="project-title">Plateforme de aaaaaa</h3>
                         <p class="project-description">aaaaaaaa</p>
@@ -298,7 +306,7 @@
                             <span class="tech">JavaScript</span>
                             <span class="tech">API Google Maps</span>
                         </div>
-                        <a href="pages" class="btn">Voir le Projet</a>
+                        <a href="pages/404.html" class="btn">Voir le Projet</a>
                     </div>
                 </div>
             </div>
@@ -317,7 +325,7 @@
                         </div>
                         <div>
                             <h3>Email</h3>
-                            <p>nadjibaimenbaghdadi@gmail.com</p>
+                            <p>baghdadi.nadjib.aimen@gmail.com</p>
                         </div>
                     </div>
                     
@@ -342,25 +350,25 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contact-form">
+                <form class="contact-form" id="contact-form" name="Contact-Me">
                     <div class="form-group">
                         <label for="name" class="form-label">Nom</label>
-                        <input type="text" id="name" class="form-input" placeholder="Votre nom" required>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Votre nom" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="Votre email" required>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Votre email" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="subject" class="form-label">Sujet</label>
-                        <input type="text" id="subject" class="form-input" placeholder="Sujet du message" required>
+                        <input type="text" name="subject" id="subject" class="form-input" placeholder="Sujet du message" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-textarea" placeholder="Votre message" required></textarea>
+                        <textarea name="message" id="message" class="form-textarea" placeholder="Votre message" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn">Envoyer le Message</button>
@@ -368,7 +376,24 @@
             </div>
         </div>
     </section>
-
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightbox-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightbox-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
