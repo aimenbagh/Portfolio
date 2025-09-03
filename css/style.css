@@ -9,7 +9,6 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
     --nav-bg: rgba(255, 255, 255, 0.95);
     --project-card-bg: #ffffff;
-    --filter-invert: 0;
     --transition: all 0.3s ease;
 }
 
@@ -23,7 +22,6 @@
     --shadow-color: rgba(0, 0, 0, 0.3);
     --nav-bg: rgba(17, 24, 39, 0.95);
     --project-card-bg: #1a2435;
-    --filter-invert: 1;
 }
 
 * {
@@ -414,7 +412,6 @@ grid-row-gap: 0px;
     width: 100%;
     height: 200px;
     object-fit: cover;
-    filter: invert(var(--filter-invert));
     border: 2px solid var(--primary-color);
     box-shadow: 0 10px 30px var(--shadow-color);
 }
