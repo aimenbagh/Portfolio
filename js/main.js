@@ -223,3 +223,20 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error('Error!', error.message))
   })
   
+        //========= Gmail compose functionality =========
+        document.addEventListener('DOMContentLoaded', function() {
+            const gmailLink = document.getElementById('gmail-link');
+            
+            gmailLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get the email address from the href attribute
+                const email = this.href.replace('mailto:', '');
+                
+                // Create Gmail compose URL
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+                
+                // Open Gmail in a new tab
+                window.open(gmailUrl, '_blank');
+            });
+        });
