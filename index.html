@@ -38,13 +38,13 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+   <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">I'm Baghdadi Nadjib Aimen.</h1>
-                <h2 class="hero-subtitle">Front-End / Full-Stack Developer.</h2>
-                <p class="hero-description">Cybersecurity Master's student @ HIS - Higher Institute of Sciences</p>
+                <h2 class="hero-subtitle">Cybersecurity Specialist / Full-Stack Developer.</h2>
+                <p class="hero-description">Master's in Cybersecurity @ HIS - Higher Institute of Sciences</p>
                 <a href="#contact" class="btn">Contact Me</a>
             </div>
             <div class="hero-image">
@@ -53,25 +53,21 @@
         </div>
     </section>
 
-    <!-- About Section -->
-
+<!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Passionate Developer</h3>
-                    <p>I'm Baghdadi Nadjib Aimen, a computer developer passionate about new technologies and creating
-                        innovative solutions, with experience in software and web platform development.</p>
-                    <p>I'm capable of innovating and providing tailor-made software solutions, optimizing efficiency and
-                        productivity.</p>
-                    <p>I'm currently a Master's student in Cybersecurity at HIS (Higher Institute of Sciences)
-                        specializing in Front-End and Full-Stack development.</p>
+                    <h3>Cybersecurity Specialist & Full-Stack Developer</h3>
+                    <p>I hold a Master's degree in Cybersecurity, specializing in security auditing, penetration testing, and the security hardening of applications and infrastructures. I'm skilled in identifying and analyzing vulnerabilities (OWASP Top 10), implementing security controls (MFA, RBAC, TLS/HTTPS), and monitoring security events with Wazuh.</p>
+                    <p>Alongside security, I'm an active full-stack developer with hands-on experience building complete web platforms — from a real-time e-learning platform with video communication (Laravel, MySQL, Vue.js, LiveKit/WebRTC) to a Java-based inventory management system. I'm comfortable working across the stack: PHP/Laravel and MySQL on the back end, Vue.js and Tailwind CSS on the front end, and Java, Python, and C/C++ for standalone applications.</p>
+                    <p>This dual background lets me build software with security built in from the start rather than bolted on afterward — I design applications the way I audit them: threat-aware, access-controlled, and encrypted by default.</p>
+                    <p>I'm currently a Master's student in Cybersecurity at HIS (Higher Institute of Sciences), and I'm looking to contribute to protecting information systems while continuing to build robust, production-ready applications.</p>
                 </div>
                 <div class="about-image">
-                    <img src="img/pho.png" alt="Baghdadi Nadjib Aimen" class="about-img clickable-image" data-index="0"
-                        data-caption="Baghdadi Nadjib Aimen">
-
+                    <img src="img/pho.png" alt="Baghdadi Nadjib Aimen" class="about-img clickable-image" data-index="0" data-caption="Baghdadi Nadjib Aimen">
+                    
                 </div>
             </div>
         </div>
@@ -173,7 +169,6 @@
     </section>
 
     <!-- Skills Section -->
-
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">My Skills</h2>
@@ -216,6 +211,8 @@
                         <span class="skill">Laravel</span>
                         <span class="skill">MySQL</span>
                         <span class="skill">MongoDB</span>
+                        <span class="skill">XML</span>
+                        <span class="skill">UML</span>
                     </div>
                 </div>
 
@@ -230,10 +227,8 @@
                         <span class="skill">C++ / C / C#</span>
                         <span class="skill">Python</span>
                         <span class="skill">JavaScript</span>
-                        <span class="skill">UML</span>
                         <span class="skill">Git</span>
                         <span class="skill">Docker</span>
-                        <span class="skill">XML</span>
                         <span class="skill">Figma</span>
                     </div>
                 </div>
@@ -247,11 +242,29 @@
                     <div class="skills-list">
                         <span class="skill">TCP/IP</span>
                         <span class="skill">DNS</span>
+                        <span class="skill">DHCP</span>
+                        <span class="skill">NAT</span>
+                        <span class="skill">VLAN</span>
                         <span class="skill">HTTP/HTTPS</span>
                         <span class="skill">LAN/WAN</span>
-                        <span class="skill">Network Security</span>
                         <span class="skill">Cisco</span>
                         <span class="skill">VPN</span>
+                    </div>
+                </div>
+
+                <!-- Security Skills -->
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-shield-halved"></i>
+                        Security
+                    </h4>
+                    <div class="skills-list">
+                        <span class="skill">OWASP Top 10</span>
+                        <span class="skill">Penetration Testing</span>
+                        <span class="skill">MFA / RBAC</span>
+                        <span class="skill">TLS/HTTPS</span>
+                        <span class="skill">Wazuh (SIEM)</span>
+                        <span class="skill">Network Security</span>
                     </div>
                 </div>
             </div>
@@ -386,6 +399,33 @@
                             <span class="tech">Responsive Design</span>
                         </div>
                         <a href="pages/listen.html" class="btn">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 8 SecureDash -->
+                <div class="project-card">
+                    <img src="img/securedash/dashboard-1.png" alt="SecureDash" class="project-img clickable-image"
+                        data-index="0" data-caption="SecureDash">
+                    <div class="project-content">
+                        <h3 class="project-title">SecureDash</h3>
+                        <p class="project-description">SecureDash is a full Security Operations Center (SOC) platform
+                            for detecting, investigating,
+                            and responding to web application attacks in real time. It combines JWT + 2FA
+                            authentication,
+                            role-based access control, Wazuh-based monitoring, automatic threat detection (SQLi, XSS,
+                            SSRF, brute-force),
+                            AI-powered alert analysis, and active response
+                            (IP blocking, network isolation) — with automated OWASP Top 10 / ISO 27001 compliance
+                            reporting.</p>
+                        <div class="project-tech">
+                            <span class="tech">React</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">Express</span>
+                            <span class="tech">MySQL</span>
+                            <span class="tech">Wazuh</span>
+                            <span class="tech">JWT / 2FA</span>
+                            <span class="tech">Mistral AI</span>
+                        </div>
+                        <a href="pages/securedash.html" class="btn">View Project</a>
                     </div>
                 </div>
             </div>

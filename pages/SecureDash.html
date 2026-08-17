@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../img/logo.png" rel="icon">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.png" alt="Logo Portfolio" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="../index.html#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">SecureDash</h1>
+                <h2 class="hero-subtitle">Résumé</h2>
+                <p class="hero-description">SecureDash is a full Security Operations Center (SOC) platform built to detect, investigate, and respond to web application attacks in real time. It combines JWT authentication with 2FA (TOTP), role-based access control (Admin / Analyst / Auditor), and centralized monitoring through Wazuh integration. The platform automatically detects threats such as SQL injection, XSS, SSRF, and SSH brute-force attempts, and enables active response through automatic/manual IP blocking and network isolation (via iptables). It also features AI-powered alert analysis (Mistral AI), a built-in remediation knowledge base mapped to MITRE ATT&CK techniques, full audit logging, and automated OWASP Top 10 / ISO 27001 compliance reporting. Developed as part of a Master's thesis in Cybersecurity in collaboration with Djezzy, SecureDash raised a deliberately vulnerable test platform's OWASP Top 10 compliance score from 45% to 9/10 controls passed.</p>
+                <a href="https://github.com/aimenbagh" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="../img/securedash/dashboard-1.png" alt="SecureDash Dashboard" class="hero-img1 clickable-image" data-index="0" data-caption="Dashboard">
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">gallery</h2>
+            <div class="projects-grid">
+                <!-- image 1 -->
+                <div class="project-card">
+                    <img src="../img/securedash/login.png" alt="Login" class="project-img clickable-image" data-index="0" data-caption="Login page with JWT + 2FA authentication">
+                    <div class="project-content">
+                        <h3 class="project-title">Login</h3>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class="project-card">
+                    <img src="../img/securedash/dashboard-1.png" alt="Dashboard" class="project-img clickable-image" data-index="0" data-caption="Main dashboard overview">
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard</h3>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class="project-card">
+                    <img src="../img/securedash/dashboard-2.png" alt="Dashboard stats" class="project-img clickable-image" data-index="0" data-caption="Dashboard statistics">
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard stats</h3>
+                    </div>
+                </div>
+                <!-- image 4 -->
+                <div class="project-card">
+                    <img src="../img/securedash/alerts-overview.png" alt="Alerts" class="project-img clickable-image" data-index="0" data-caption="Security alerts dashboard">
+                    <div class="project-content">
+                        <h3 class="project-title">Alerts overview</h3>
+                    </div>
+                </div>
+                <!-- image 5 -->
+                <div class="project-card">
+                    <img src="../img/securedash/alert-detail-ai-1.png" alt="AI alert analysis" class="project-img clickable-image" data-index="0" data-caption="AI-powered alert analysis (Mistral AI)">
+                    <div class="project-content">
+                        <h3 class="project-title">AI alert analysis</h3>
+                    </div>
+                </div>
+                <!-- image 6 -->
+                <div class="project-card">
+                    <img src="../img/securedash/alert-resolve-1.png" alt="Alert resolution" class="project-img clickable-image" data-index="0" data-caption="Alert resolution with pre-documented solutions">
+                    <div class="project-content">
+                        <h3 class="project-title">Alert resolution</h3>
+                    </div>
+                </div>
+                <!-- image 7 -->
+                <div class="project-card">
+                    <img src="../img/securedash/blocked-ips.png" alt="Blocked IPs" class="project-img clickable-image" data-index="0" data-caption="Automatic and manual IP blocking">
+                    <div class="project-content">
+                        <h3 class="project-title">IP blocking</h3>
+                    </div>
+                </div>
+                <!-- image 8 -->
+                <div class="project-card">
+                    <img src="../img/securedash/isolation-requested.png" alt="Isolation requested" class="project-img clickable-image" data-index="0" data-caption="Network isolation request (Analyst → Admin)">
+                    <div class="project-content">
+                        <h3 class="project-title">Isolation request</h3>
+                    </div>
+                </div>
+                <!-- image 9 -->
+                <div class="project-card">
+                    <img src="../img/securedash/isolated-apps.png" alt="Isolated applications" class="project-img clickable-image" data-index="0" data-caption="Isolated applications, inaccessible from outside the network">
+                    <div class="project-content">
+                        <h3 class="project-title">Isolated apps</h3>
+                    </div>
+                </div>
+                <!-- image 10 -->
+                <div class="project-card">
+                    <img src="../img/securedash/applications.png" alt="Applications" class="project-img clickable-image" data-index="0" data-caption="Monitored web applications">
+                    <div class="project-content">
+                        <h3 class="project-title">Applications</h3>
+                    </div>
+                </div>
+                <!-- image 11 -->
+                <div class="project-card">
+                    <img src="../img/securedash/agents-list.png" alt="Wazuh agents" class="project-img clickable-image" data-index="0" data-caption="Wazuh agents monitored by SecureDash">
+                    <div class="project-content">
+                        <h3 class="project-title">Wazuh agents</h3>
+                    </div>
+                </div>
+                <!-- image 12 -->
+                <div class="project-card">
+                    <img src="../img/securedash/user-management.png" alt="User management" class="project-img clickable-image" data-index="0" data-caption="User management with role assignment (RBAC)">
+                    <div class="project-content">
+                        <h3 class="project-title">User management</h3>
+                    </div>
+                </div>
+                <!-- image 13 -->
+                <div class="project-card">
+                    <img src="../img/securedash/rules-management.png" alt="Rules management" class="project-img clickable-image" data-index="0" data-caption="Custom detection rules management">
+                    <div class="project-content">
+                        <h3 class="project-title">Rules management</h3>
+                    </div>
+                </div>
+                <!-- image 14 -->
+                <div class="project-card">
+                    <img src="../img/securedash/knowledge-base-1.png" alt="Knowledge base" class="project-img clickable-image" data-index="0" data-caption="Remediation knowledge base by attack type">
+                    <div class="project-content">
+                        <h3 class="project-title">Knowledge base</h3>
+                    </div>
+                </div>
+                <!-- image 15 -->
+                <div class="project-card">
+                    <img src="../img/securedash/global-history.png" alt="Global history" class="project-img clickable-image" data-index="0" data-caption="Global audit history / traceability">
+                    <div class="project-content">
+                        <h3 class="project-title">Audit history</h3>
+                    </div>
+                </div>
+                <!-- image 16 -->
+                <div class="project-card">
+                    <img src="../img/securedash/email-alert.png" alt="Email alert" class="project-img clickable-image" data-index="0" data-caption="Real-time security alert email notification">
+                    <div class="project-content">
+                        <h3 class="project-title">Email notifications</h3>
+                    </div>
+                </div>
+                <!-- image 17 -->
+                <div class="project-card">
+                    <img src="../img/securedash/owasp-score-before.jpeg" alt="OWASP compliance before" class="project-img clickable-image" data-index="0" data-caption="OWASP Top 10 compliance report — vulnerable test platform (45%)">
+                    <div class="project-content">
+                        <h3 class="project-title">OWASP compliance report</h3>
+                    </div>
+                </div>
+                <!-- image 18 -->
+                <div class="project-card">
+                    <img src="../img/securedash/settings.png" alt="Settings" class="project-img clickable-image" data-index="0" data-caption="Platform settings">
+                    <div class="project-content">
+                        <h3 class="project-title">Settings</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outils Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Outils</h2>
+            <div class="skills-categories">
+                <!-- Front-End Skills -->
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-paint-brush"></i>
+                        Front-End
+                    </h4>
+                    <div class="skills-list">
+                        <span class="skill">React 18</span>
+                        <span class="skill">Vite</span>
+                        <span class="skill">Recharts</span>
+                        <span class="skill">Axios</span>
+                    </div>
+                </div>
+
+                <!-- Back-End Skills -->
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Back-End
+                    </h4>
+                    <div class="skills-list">
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Express 5</span>
+                        <span class="skill">MySQL</span>
+                        <span class="skill">JWT</span>
+                        <span class="skill">bcrypt</span>
+                    </div>
+                </div>
+
+                <!-- Security / SOC Skills -->
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-shield-halved"></i>
+                        Security / SOC
+                    </h4>
+                    <div class="skills-list">
+                        <span class="skill">Wazuh (SIEM)</span>
+                        <span class="skill">2FA / TOTP</span>
+                        <span class="skill">RBAC</span>
+                        <span class="skill">iptables</span>
+                        <span class="skill">OWASP Top 10</span>
+                        <span class="skill">ISO 27001</span>
+                        <span class="skill">MITRE ATT&CK</span>
+                    </div>
+                </div>
+
+                <!-- Other Tools -->
+                <div class="skill-category">
+                    <h4 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Other Tools
+                    </h4>
+                    <div class="skills-list">
+                        <span class="skill">Mistral AI API</span>
+                        <span class="skill">Nodemailer (SMTP)</span>
+                        <span class="skill">Server-Sent Events</span>
+                        <span class="skill">Helmet / CORS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightbox-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightbox-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a href="../index.html#education">Education</a></li>
+                    <li class="nav-item"><a href="../index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a href="../index.html#certifications">Certifications</a></li>
+                    <li class="nav-item"><a href="../index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a href="../index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://github.com/aimenbagh" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/baghdadi-nadjib-aimen/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:baghdadi.nadjib.aimen@gmail.com" class="social-link" id="gmail-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">&copy; Created by Baghdadi Nadjib Aimen | all rights reserved</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
